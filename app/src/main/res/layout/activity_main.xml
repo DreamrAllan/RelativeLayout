@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="34dp"
+    android:layout_marginLeft="34dp"
+    android:layout_marginRight="34dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PT XYZ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:src="@drawable/outline_location_on_24"
+        />
+
+    <TextView
+        android:id="@+id/sleman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_toRightOf="@+id/lokasi"
+        android:text="Sleman"
+        android:layout_marginLeft="5dp"
+        />
+    <ImageView
+        android:id="@+id/kotak"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_below="@+id/sleman"
+        android:src="@drawable/kotak"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/deskripsi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sleman"
+        android:layout_marginTop="40dp"
+        android:text="Informasi perubahan data katalog"
+        android:textColor="@color/abuabu"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/deskripsi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi1"
+        android:layout_marginTop="5dp"
+        android:text="Pembaruan terakhir: "
+        android:textColor="@color/abuabu"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/deskripsi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi1"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/deskripsi2"
+        android:text="16-06-2022 15:00:01"
+        android:textColor="@color/orentext"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/deskripsi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/deskripsi2"
+        android:text="Pembaruan selanjutnya: "
+        android:textColor="@color/abuabu"
+        android:layout_marginStart="30dp"
+        />
+    <TextView
+        android:id="@+id/deskripsi5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi3"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/deskripsi4"
+        android:text="17-06-2022 15:00:01"
+        android:textColor="@color/orentext"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/kotak1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/kotak"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/kotak1"
+        />
+
+    <ImageView
+        android:id="@+id/katalog"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/kotak"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/baseline_manage_search_24" />
+
+
+    <TextView
+        android:id="@+id/txt_katalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/katalog"
+        android:layout_marginStart="53dp"
+        android:text="Katalog Tender"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/kotak2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/kotak"
+        android:layout_toRightOf="@id/kotak1"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/kotak1"
+        />
+
+    <ImageView
+        android:id="@+id/simpan"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/kotak"
+        android:layout_toRightOf="@id/kotak1"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/baseline_bookmark_added_24"
+        />
+
+    <TextView
+        android:id="@+id/txt_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simpan"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/kotak1"
+        android:text="Tender Tersimpan"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/kotak3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/kotak1"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/kotak1"
+        />
+
+    <ImageView
+        android:id="@+id/statistik"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/kotak1"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/baseline_assessment_24" />
+
+    <TextView
+        android:id="@+id/txt_statistik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statistik"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Laporan Statistik"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/kotak4"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/kotak2"
+        android:layout_toRightOf="@id/kotak3"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/kotak1"
+        />
+
+    <ImageView
+        android:id="@+id/pengaturan"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/kotak2"
+        android:layout_toRightOf="@id/kotak3"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/baseline_settings_24" />
+
+    <TextView
+        android:id="@+id/txt_pengaturan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pengaturan"
+        android:layout_toRightOf="@id/kotak3"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="20dp"
+        android:text="Pengaturan"
+        android:textSize="13sp" />
+
+</RelativeLayout>
